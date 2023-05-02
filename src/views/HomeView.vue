@@ -25,7 +25,7 @@
               <td>{{ prod.email }}</td>
               <td>{{ prod.phone }}</td>
               <td>{{ prod.direction }}</td>
-              <td>{{ prod.ciudad }}</td>
+              <td>{{ prod.city }}</td>
               <td>
                 <router-link
                   :to="{ path: 'edit/' + prod.id }"
