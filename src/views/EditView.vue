@@ -23,28 +23,84 @@
             </div>
             <div class="input-group mb-3">
               <span class="input-group-text"
-                ><i class="fa-solid fa-comment"></i
+                ><i class="fa-solid fa-gift"></i
               ></span>
               <input
                 type="text"
-                v-model="descripcion"
-                id="descripcion"
+                v-model="tipo document"
+                id=" tipo doc"
                 class="form-control"
-                maxlength="150"
-                placeholder="Descripcion"
+                placeholder="Tipo doc"
+                step="0.01"
                 required
               />
-            </div>
+            
             <div class="input-group mb-3">
               <span class="input-group-text"
                 ><i class="fa-solid fa-dollar-sign"></i
               ></span>
               <input
                 type="number"
-                v-model="price"
-                id="precio"
+                v-model="document"
+                id="documento"
                 class="form-control"
-                placeholder="Precio"
+                maxlength="150"
+                placeholder="Documento"
+                required
+              />
+            </div>
+              <div class="input-group mb-3">
+              <span class="input-group-text"
+                ><i class="fa-solid fa-dollar-sign"></i
+              ></span>
+              <input
+                type="email"
+                v-model="email"
+                id="correo"
+                class="form-control"
+                placeholder="Correo"
+                step="0.01"
+                required
+              />
+            </div>
+             <div class="input-group mb-3">
+              <span class="input-group-text"
+                ><i class="fa-solid fa-dollar-sign"></i
+              ></span>
+              <input
+                type="number"
+                v-model="phone"
+                id="telefono"
+                class="form-control"
+                placeholder="Telefono"
+                step="0.01"
+                required
+              />
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text"
+                ><i class="fa-solid fa-gift"></i
+              ></span>
+              <input
+                type="text"
+                v-model="direction"
+                id="direccion"
+                class="form-control"
+                placeholder="Direccion"
+                step="0.01"
+                required
+              />
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text"
+                ><i class="fa-solid fa-gift"></i
+              ></span>
+              <input
+                type="text"
+                v-model="city"
+                id="ciudad"
+                class="form-control"
+                placeholder="Ciudad"
                 step="0.01"
                 required
               />
