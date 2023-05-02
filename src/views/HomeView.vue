@@ -7,8 +7,12 @@
             <tr>
               <th>#</th>
               <th>Nombre</th>
-              <th>Descripcion</th>
-              <th>Precio</th>
+              <th>Tipo doc</th>
+              <th>Documento</th>
+              <th>Correo</th>
+              <th>Telefono</th>
+              <th>Direccion</th>
+              <th>Ciudad</th>
               <th>Acciones</th>
             </tr>
           </thead>
@@ -16,8 +20,12 @@
             <tr v-for="(prod, i) in products" :key="prod.id">
               <td>{{ i + 1 }}</td>
               <td>{{ prod.name }}</td>
-              <td>{{ prod.descripcion }}</td>
-              <td>{{ new Intl.NumberFormat("es-mx").format(prod.price) }}</td>
+              <td>{{ prod.tipo document }}</td>
+              <td>{{ new Intl.NumberFormat("es-mx").format(prod.document) }}</td>
+              <td>{{ prod.email }}</td>
+              <td>{{ prod.phone }}</td>
+              <td>{{ prod.direction }}</td>
+              <td>{{ prod.ciudad }}</td>
               <td>
                 <router-link
                   :to="{ path: 'edit/' + prod.id }"
@@ -53,7 +61,7 @@ export default {
   methods: {
     getProducts() {
       axios
-        .get("http://laraproducts.run/api/products")
+        .get("")
         .then((response) => (this.products = response.data));
     },
     eliminar(id, Nombre) {
